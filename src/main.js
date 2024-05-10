@@ -30,7 +30,6 @@ function formHandler(event) {
   loader.classList.toggle('is-hidden');
   listResults.innerHTML = '';
 
-  setTimeout(() => {
     fetchImg(input.value.trim())
       .then(data => {
         event.target.reset();
@@ -51,7 +50,6 @@ function formHandler(event) {
       .finally(() => {
         loader.classList.toggle('is-hidden');
       });
-  }, 750);
 }
 
 searchForm.addEventListener('submit', formHandler);
