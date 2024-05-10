@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="section-form">
-      <form class="form-search-img">
-        <input
-          type="text"
-          name="search-input"
-          id="search"
-          placeholder="Search image..."
-          class="search-input"
-        />
-        <button type="submit" class="search-btn">Search</button>
-      </form>
-    </section>
+    <section>
+      <div class="container">
+        <form class="form-search-img">
+          <input
+            type="text"
+            name="search-input"
+            id="search"
+            placeholder="Search image..."
+            class="search-input"
+          />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
 
-    <section class="section-results">
-      <p class="loading-text is-hidden">Loading images, please wait...</p>
+        <span class="loader is-hidden"></span>
+        <ul class="list-results"></ul>
+      </div>
     </section>
 
     <script type="module" src="./main.js"></script>
